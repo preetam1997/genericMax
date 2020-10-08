@@ -34,4 +34,28 @@ public class GenericTest {
 		Integer max = findMax.Max(arr);
 		assertTrue(max == 3);
 	}
+
+	@Test
+	public void GivenFloatArrayWithMaxAtFirst_returnsCorrectMax_shouldAnswerWithTrue() {
+		Float[] arr = { 3.1f, 2.9f, 1.0f };
+		FindMax findMax = new FindMax();
+		Float max = findMax.Max(arr);
+		assertTrue(max == 3.1f);
+	}
+
+	@Test
+	public void GivenFloatArrayWithMaxAtSecond_returnsCorrectMax_shouldAnswerWithTrue() {
+		Float[] arr = { 1.0f, 3.1f, 2.9f };
+		FindMax findMax = new FindMax();
+		Float max = findMax.Max(arr);
+		assertTrue(max == 3.1f);
+	}
+
+	@Test
+	public void GivenFloatArrayWithMaxAtThird_returnsCorrectMax_shouldAnswerWithTrue() {
+		Float[] arr = { 2.9f, 1.0f, 3.1f };
+		FindMax findMax = new FindMax();
+		Float max = findMax.Max(arr);
+		assertTrue(max == 3.1f);
+	}
 }
