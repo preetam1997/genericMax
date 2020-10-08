@@ -58,4 +58,28 @@ public class GenericTest {
 		Float max = findMax.Max(arr);
 		assertTrue(max == 3.1f);
 	}
+
+	@Test
+	public void GivenStringArrayWithMaxAtFirst_returnsCorrectMax_shouldAnswerWithTrue() {
+		String[] arr = { "peach", "apple", "banana" };
+		FindMax findMax = new FindMax();
+		String max = findMax.Max(arr);
+		assertTrue(max.matches("peach"));
+	}
+
+	@Test
+	public void GivenStringArrayWithMaxAtSecond_returnsCorrectMax_shouldAnswerWithTrue() {
+		String[] arr = { "apple", "peach", "banana" };
+		FindMax findMax = new FindMax();
+		String max = findMax.Max(arr);
+		assertTrue(max.matches("peach"));
+	}
+
+	@Test
+	public void GivenStringArrayWithMaxAtThird_returnsCorrectMax_shouldAnswerWithTrue() {
+		String[] arr = { "apple", "banana", "peach" };
+		FindMax findMax = new FindMax();
+		String max = findMax.Max(arr);
+		assertTrue(max.matches("peach"));
+	}
 }
