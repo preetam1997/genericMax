@@ -9,7 +9,6 @@ public class FindMax<X, Y, Z> {
 	
 	public FindMax() {}
 	public FindMax(X[] xArr, Y[] yArr, Z[] zArr) {
-
 		this.xArr = xArr;
 		this.yArr = yArr;
 		this.zArr = zArr;
@@ -18,8 +17,7 @@ public class FindMax<X, Y, Z> {
 	public <T extends Comparable<T>> T Max(T... optionalValues) {
 		Arrays.sort(optionalValues);
 		T max = optionalValues[optionalValues.length-1];
+		System.out.println(max);
 		return max;
-
 	}
-
 }
